@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: demo-python-03231454-gh
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: demo-python-03231454-gh 
+  name: demo-python-03231454-gh
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: demo-python-03231454-gh 
